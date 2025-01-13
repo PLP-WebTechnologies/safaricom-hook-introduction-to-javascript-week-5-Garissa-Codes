@@ -75,7 +75,7 @@ checkVoteEligibility();
  function displayNumbers() {
     const numberList = document.getElementById('numberList');
 
-    // Loop from 1 to 10 and create <li> for each number
+    // Looping from 1 to 10 and create <li> for each number
     for (let i = 1; i <= 10; i++) {
         const listItem = document.createElement('li');
         listItem.textContent = i;
@@ -83,16 +83,16 @@ checkVoteEligibility();
     }
 }
 
-// Call the displayNumbers function to run when the page is loaded
+// Calling the displayNumbers function to run when the page is loaded
 window.onload = displayNumbers;
 
 // DOM Manipulation
-// Change the text of the <h1> element
+// Changing the text of the <h1> element
 document.querySelector('h1').textContent = "JavaScript in Action!";
 
-// Create a new <p> element and add it inside the #dynamic-content <div>
+// Creating a new <p> element and add it inside the #dynamic-content <div>
 const newParagraph = document.createElement('p');
 newParagraph.innerHTML = "<b>This content was added dynamically using JavaScript.</b>";
 
-// Append the new <p> element to the dynamic-content div
+// Appending the new <p> element to the dynamic-content div
 document.getElementById('dynamic-content').appendChild(newParagraph);
